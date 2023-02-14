@@ -1,0 +1,41 @@
+.landing {
+    background-image: url(/imgs/Contact-Banner.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.landing .landing-page {
+    height: 350px;
+}
+
+.contact-us input{
+    padding: 0;
+    height: 70px;
+    outline: none;
+}
+
+.contact-us input.message{
+    font-size: 18px;
+}
+
+.contact-us i{
+    width: 50px;
+    height: 50px;
+    border: 1px solid var(--main-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-us .socials{
+    display: flex;
+}
+
+.contact-us .socials i{
+    width: 30px;
+    height: 30px; 
+    margin-left: 5px;
+    cursor: pointer;
+    background-color: var(--main-color);
+}

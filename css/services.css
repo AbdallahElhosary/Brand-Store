@@ -1,0 +1,17 @@
+.landing {
+    background-image: url(/imgs/Call-to-action.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.landing .landing-page {
+    height: 550px;
+}
+
+.about-us-1{
+    direction: rtl;
+}
+
+.about-us-text{
+    direction: ltr;
+}

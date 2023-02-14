@@ -1,0 +1,363 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  --main-color: #74a84a;
+  --second-color: #2c541d;
+  --third-color: #000000;
+  --fourth-color: #585858;
+  --five-color: #f6f8f5;
+  --body-font: "serif";
+}
+
+body {
+  transition: 0.3s;
+  overflow-x: hidden;
+}
+
+::-moz-selection {
+  background-color: var(--main-color);
+  color: black;
+}
+
+::selection {
+  background-color: var(--main-color);
+  color: black;
+}
+
+.head-color {
+  color: var(--third-color);
+}
+
+.main-color {
+  background-color: var(--main-color);
+}
+
+.first-color {
+  color: var(--main-color);
+}
+
+.fourth-color {
+  color: var(--fourth-color);
+}
+
+.list-border {
+  border: 1px solid #ddd;
+}
+
+.main-head {
+  position: relative;
+  color: var(--third-color);
+  font-weight: bold;
+}
+.main-head::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 3px;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--main-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.toggle-menu {
+  width: 330px;
+  height: 100vh;
+  background-color: white;
+  position: fixed;
+  z-index: 1000;
+  right: 0px;
+  top: 0;
+  transition: 1s;
+}
+.toggle-menu.hide-toggle {
+  right: -330px;
+}
+.toggle-menu .toggler-text {
+  position: absolute;
+  display: flex;
+  width: 150px;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  color: #2563eb;
+  background-color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 5px 0px 0 5px;
+  top: 200px;
+}
+.toggle-menu .toggler-text:hover {
+  background-color: #2563eb;
+  color: white;
+}
+.toggle-menu .toggler-text i {
+  font-size: 17px;
+  text-align: center;
+  width: 25%;
+}
+.toggle-menu .toggler-text span {
+  width: 70%;
+  font-size: 18px;
+}
+.toggle-menu .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  box-shadow: 9px -1px 8px 0px #555;
+  margin-bottom: 20px;
+}
+.toggle-menu .header i {
+  width: 22px;
+  height: 22px;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ddd;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.toggle-menu .header i:hover {
+  border-color: black;
+}
+.toggle-menu .container .try {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.toggle-menu .container .try div {
+  font-size: 18px;
+  font-weight: bold;
+}
+.toggle-menu .container .colors .list {
+  margin-bottom: 5px;
+  cursor: pointer;
+  height: 40px;
+  transition: 0.3s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.toggle-menu .container .colors .list:hover {
+  border-color: #2563eb;
+}
+.toggle-menu .container .colors .list.active {
+  border-color: #2563eb;
+}
+.toggle-menu .container .colors .list.lists {
+  width: calc(50% - 5px);
+}
+.toggle-menu .container .colors .list > div {
+  font-size: 13px;
+}
+.toggle-menu .container .colors .list ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+}
+.toggle-menu .container .colors .list ul li {
+  width: 18px;
+  height: 18px;
+  margin-left: 3px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.toggle-menu .container .fonts .font-element {
+  cursor: pointer;
+}
+.toggle-menu .container .fonts .font-element:nth-child(1) {
+  font-family: "Times New Roman", Times, serif;
+}
+.toggle-menu .container .fonts .font-element:nth-child(2) {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.toggle-menu .container .fonts .font-element:nth-child(3) {
+  font-family: sans-serif;
+}
+.toggle-menu .container .fonts .font-element:nth-child(4) {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.toggle-menu .container .fonts .font-element:nth-child(5) {
+  font-family: "poppins";
+}
+.toggle-menu .container .fonts .font-element:nth-child(6) {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.toggle-menu .container .fonts .font-element:nth-child(7) {
+  font-family: monospace;
+}
+.toggle-menu .container .fonts .font-element:nth-child(8) {
+  font-family: "Roboto Condensed", sans-serif;
+}
+.toggle-menu .container .fonts .font-element:nth-child(9) {
+  font-family: "Oswald", sans-serif;
+}
+.toggle-menu .container .fonts .lists {
+  width: calc(25% - 5px);
+  cursor: pointer;
+  transition: 0.3s;
+}
+.toggle-menu .container .fonts .lists:hover {
+  border-color: #2563eb;
+  color: #2563eb;
+}
+.toggle-menu .container .fonts .active {
+  border-color: #2563eb;
+}
+
+.toggler-text-pos {
+  left: -150px;
+  transition: 1s;
+}
+
+button {
+  border-radius: 0;
+  background-color: var(--main-color);
+}
+
+.landing {
+  background-image: url("/imgs/Banner.jpg");
+  background-size: cover;
+  position: relative;
+}
+.landing.home {
+  height: 100vh;
+}
+.landing .header nav {
+  background-color: transparent;
+}
+.landing .header .navbar-toggler {
+  outline: none;
+  background-color: var(--main-color);
+}
+.landing .header .navbar-toggler .navbar-toggler-icon {
+  color: white;
+}
+.landing .header .navbar-collapse .nav-item a {
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.landing .header .navbar-collapse.show {
+  width: 100%;
+}
+.landing .header .navbar-collapse.show .nav-item {
+  background-color: white;
+  border-bottom: 1px solid var(--second-color);
+}
+.landing .header .navbar-collapse.show .nav-item a {
+  font-size: 20px;
+  font-weight: bold;
+}
+.landing .header .navbar-brand {
+  font-weight: bolder;
+  font-size: 25px;
+}
+.landing .header .nav-item .btn {
+  margin-left: 10px;
+}
+.landing .landing-page {
+  position: relative;
+  height: 450px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: white;
+}
+.landing .landing-page > div {
+  text-align: center;
+}
+.landing .landing-page > div h1 {
+  font-size: 80px;
+  color: var(--second-color);
+}
+.landing .landing-page > div p {
+  color: black;
+  font-size: 60px;
+  font-weight: lighter;
+}
+.landing .landing-page > div button {
+  background-color: var(--main-color);
+  transition: 0.3s;
+  border-radius: 0;
+  width: 150px;
+  font-size: 20px;
+  color: white;
+  text-transform: uppercase;
+}
+.landing .landing-page > div button:hover {
+  background-color: var(--second-color);
+}
+
+.services .container .row img {
+  margin-bottom: 10px;
+}
+.services .container .row h4 {
+  font-weight: bold;
+}
+.services .container .row p {
+  color: var(--fourth-color);
+}
+
+.feedback {
+  height: 500px;
+  background-color: var(--five-color);
+}
+.feedback.questions {
+  background-image: url(/imgs/Call-to-action.jpg);
+  background-size: cover;
+}
+.feedback .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+.feedback .container span {
+  font-size: 55px;
+  margin: 0;
+  padding: 0;
+  color: var(--second-color);
+}
+.feedback .container p {
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+.feedback .container button {
+  background-color: var(--main-color);
+  transition: 0.3s;
+  border-radius: 0;
+  color: white;
+  font-size: 20px;
+  width: 250px;
+}
+.feedback .container button:hover {
+  background-color: var(--second-color);
+}
+
+footer .container ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+}
+footer .container img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}/*# sourceMappingURL=main.css.map */
