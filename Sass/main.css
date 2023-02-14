@@ -229,7 +229,7 @@ button {
 }
 
 .landing {
-  background-image: url("imgs/Banner.jpg");
+  background-image: url("../imgs/Banner.jpg");
   background-size: cover;
   position: relative;
 }
