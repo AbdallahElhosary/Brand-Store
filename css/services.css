@@ -1,5 +1,5 @@
 .landing {
-    background-image: url(/imgs/Call-to-action.jpg);
+    background-image: url(../imgs/Call-to-action.jpg);
     background-size: cover;
     position: relative;
 }
