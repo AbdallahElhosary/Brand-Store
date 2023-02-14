@@ -1,5 +1,5 @@
 .landing {
-    background-image: url(/imgs/Contact-Banner.jpg);
+    background-image: url(../imgs/Contact-Banner.jpg);
     background-size: cover;
     position: relative;
 }
